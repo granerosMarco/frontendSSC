@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Catálogo de proveedores vigentes · Dirección de Proveeduría y Servicios — UdeC</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/paginas.css">
+  <script src="js/app.js" defer></script>
+</head>
+<body data-nav="proveedores">
+  <div data-header></div>
+
+  <main>
+    <section data-hero data-crumbs="Proveedores::requisitos.html|Catálogo" data-title="Catálogo de proveedores vigentes" data-desc="Proveedores activos y validados por la Dirección de Proveeduría y Servicios. Solo se muestran datos públicos."></section>
+
+    <div class="wrap content stack gap-24">
+      <form class="cat-filtros" onsubmit="return false">
+        <div class="campo f1"><label for="c-bus">Buscar proveedor</label><input id="c-bus" class="input" placeholder="Nombre comercial o RFC"></div>
+        <div class="campo" style="width:172px"><label for="c-rub">Rubro</label><select id="c-rub" class="input"><option>Todos los rubros</option><option>Equipo de cómputo</option><option>Papelería y oficina</option><option>Material de laboratorio</option><option>Mobiliario</option><option>Limpieza</option></select></div>
+        <div class="campo" style="width:172px"><label for="c-tip">Tipo</label><select id="c-tip" class="input"><option>Local, nacional o internacional</option><option>Local</option><option>Nacional</option><option>Internacional</option></select></div>
+        <div class="campo" style="width:172px"><label for="c-edo">Estado</label><select id="c-edo" class="input"><option>Todos</option><option>Colima</option><option>Jalisco</option><option>Ciudad de México</option></select></div>
+        <button class="btn" data-toast="filtros">Buscar</button>
+      </form>
+      <div class="row jc-sb ai-c">
+        <b>412 proveedores vigentes</b>
+        <div class="row gap-8"><button class="btn-exp" data-toast="exportacion"><i data-ic="excel" class="ic-16"></i>Exportar Excel</button><button class="btn-exp" data-toast="exportacion"><i data-ic="doc" class="ic-16"></i>Exportar CSV</button></div>
+      </div>
+      <table class="tabla tabla--cat">
+        <thead><tr><th>Clave</th><th>Nombre comercial</th><th>Rubro</th><th>Ciudad / Estado</th><th>Tipo</th><th>Vigente hasta</th><th>Estatus</th></tr></thead>
+        <tbody>
+          <tr><td>PRV-0412</td><td><b>Soluciones Informáticas del Pacífico</b></td><td>Equipo de cómputo</td><td>Colima, Col.</td><td>Local</td><td>15/09/2027</td><td><span class="tag tag--vigente">Vigente</span></td></tr>
+          <tr><td>PRV-0398</td><td><b>Papelería y Suministros Volcán</b></td><td>Papelería y oficina</td><td>Villa de Álvarez, Col.</td><td>Local</td><td>02/08/2027</td><td><span class="tag tag--vigente">Vigente</span></td></tr>
+          <tr><td>PRV-0377</td><td><b>Laboratorios Técnicos de Occidente</b></td><td>Material de laboratorio</td><td>Guadalajara, Jal.</td><td>Nacional</td><td>28/07/2027</td><td><span class="tag tag--vigente">Vigente</span></td></tr>
+          <tr><td>PRV-0365</td><td><b>Mobiliario Escolar MX</b></td><td>Mobiliario</td><td>Ciudad de México</td><td>Nacional</td><td>11/07/2027</td><td><span class="tag tag--vigente">Vigente</span></td></tr>
+          <tr><td>PRV-0351</td><td><b>Limpieza Integral Manzanillo</b></td><td>Limpieza</td><td>Manzanillo, Col.</td><td>Local</td><td>30/06/2027</td><td><span class="tag tag--vigente">Vigente</span></td></tr>
+          <tr><td>PRV-0344</td><td><b>Climas y Refrigeración Tecomán</b></td><td>Mantenimiento</td><td>Tecomán, Col.</td><td>Local</td><td>21/06/2027</td><td><span class="tag tag--vigente">Vigente</span></td></tr>
+          <tr><td>PRV-0329</td><td><b>Impresos Gráficos del Centro</b></td><td>Impresión y publicaciones</td><td>Colima, Col.</td><td>Local</td><td>09/06/2027</td><td><span class="tag tag--vigente">Vigente</span></td></tr>
+          <tr><td>PRV-0310</td><td><b>Global Lab Supplies</b></td><td>Material de laboratorio</td><td>Houston, TX (EUA)</td><td>Internacional</td><td>01/06/2027</td><td><span class="tag tag--vigente">Vigente</span></td></tr>
+        </tbody>
+      </table>
+      <div class="paginacion">
+        <button data-p="prev" aria-label="Anterior"><i data-ic="chevL" class="ic-16"></i></button>
+        <button data-p="1" class="is-active">1</button><button data-p="2">2</button><button data-p="3">3</button><button data-p="x" disabled>…</button><button data-p="52">52</button>
+        <button data-p="next" aria-label="Siguiente"><i data-ic="chevR" class="ic-16"></i></button>
+      </div>
+      <div class="aviso"><i data-ic="lock"></i><p>Los datos sensibles (RFC completo, domicilio, teléfonos, representantes y documentos) solo son visibles para el personal autorizado en el sistema interno.</p></div>
+    </div>
+  </main>
+
+  <div data-footer></div>
+</body>
+</html>

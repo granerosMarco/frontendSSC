@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Registro · Paso 3 · Dirección de Proveeduría y Servicios — UdeC</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/paginas.css">
+  <script src="js/app.js" defer></script>
+</head>
+<body data-nav="proveedores">
+  <div data-header></div>
+
+  <main>
+    <section data-hero data-crumbs="Proveedores::requisitos.html|Registro" data-title="Solicitud de ingreso al padrón de proveedores" data-desc="Completa los 5 pasos. Los campos marcados con * son obligatorios."></section>
+
+    <div class="wrap content stack gap-32">
+      <div class="stepper"><div class="step is-done"><span class="step__n"><i data-ic="tick" class="ic-20"></i></span><span class="step__t"><small>Paso 1</small><b>Declaración</b></span></div><span class="step__line is-done"></span><div class="step is-done"><span class="step__n"><i data-ic="tick" class="ic-20"></i></span><span class="step__t"><small>Paso 2</small><b>Datos generales</b></span></div><span class="step__line is-done"></span><div class="step is-current"><span class="step__n">3</span><span class="step__t"><small>Paso 3</small><b>Domicilio y contacto</b></span></div><span class="step__line"></span><div class="step "><span class="step__n">4</span><span class="step__t"><small>Paso 4</small><b>Representación</b></span></div><span class="step__line"></span><div class="step "><span class="step__n">5</span><span class="step__t"><small>Paso 5</small><b>Rubros y documentos</b></span></div></div>
+      <div class="reg">
+      <div class="reg__main">
+        <section class="form-sec">
+          <div class="form-sec__hd"><b class="h4">Domicilio fiscal</b><p>Debe coincidir con tu constancia de situación fiscal.</p></div>
+          <div class="aviso aviso--sm aviso--alerta"><i data-ic="warning"></i><p>Usa tu domicilio fiscal, no el de una sucursal o bodega.</p></div>
+          <div class="campo"><span class="lbl">Comprobante de domicilio *</span><div class="radios"><label class="radio"><input type="radio" name="comp" checked>Luz</label><label class="radio"><input type="radio" name="comp">Teléfono</label><label class="radio"><input type="radio" name="comp">Agua</label></div></div>
+          <div class="grid-3 ai-s"><div class="campo"><label>Código postal *</label><input class="input" type="text" placeholder="28040"><span class="ayuda">Se completan estado y municipio.</span></div><div class="campo"><label>Estado *</label><select class="input"><option>Colima</option><option>Jalisco</option><option>Michoacán</option><option>Otro</option></select></div><div class="campo"><label>Municipio *</label><select class="input"><option>Colima</option><option>Villa de Álvarez</option><option>Manzanillo</option><option>Tecomán</option></select></div></div>
+          <div class="grid-2"><div class="campo"><label>Calle *</label><input class="input" type="text" placeholder="Nombre de la calle"></div><div class="campo"><label>Número exterior e interior *</label><input class="input" type="text" placeholder="Ej. 333 Int. 4"></div></div>
+          <div class="grid-3"><div class="campo"><label>Colonia *</label><input class="input" type="text" placeholder="Colonia"></div><div class="campo"><label>Localidad *</label><input class="input" type="text" placeholder="Localidad"></div><div class="campo"><label>Entre calles</label><input class="input" type="text" placeholder="Referencias"></div></div>
+        </section>
+        <section class="form-sec">
+          <div class="form-sec__hd"><b class="h4">Datos de contacto</b></div>
+          <div class="grid-2 ai-s"><div class="campo"><label>Correo electrónico *</label><input class="input" type="email" placeholder="nombre@empresa.com"><span class="ayuda">Aquí recibirás las invitaciones.</span></div><div class="campo"><label>Confirmar correo *</label><input class="input" type="email" placeholder="nombre@empresa.com"><span class="ayuda">Escríbelo de nuevo.</span></div></div>
+          <div class="grid-2 ai-s"><div class="campo"><label>Teléfono fijo *</label><input class="input" type="tel" placeholder="(312) 000 00 00"><span class="ayuda">10 dígitos, con lada.</span></div><div class="campo"><label>Teléfono móvil *</label><input class="input" type="tel" placeholder="(312) 000 00 00"></div></div>
+          <div class="campo"><label>Página web</label><input class="input" type="url" placeholder="https://"><span class="ayuda">Opcional.</span></div>
+        </section>
+        <div class="acciones">
+          <a class="btn-ant" href="registro-paso2.html"><i data-ic="back"></i>Anterior</a>
+          <div class="row gap-12"><button class="btn btn--contorno" data-toast="borrador">Guardar borrador</button><a class="btn" href="registro-paso4.html">Siguiente: Representación <i data-ic="chevR"></i></a></div>
+        </div>
+      </div>
+      <aside class="reg__lado">
+        <div class="ayuda-card">
+          <b class="h4">¿Necesitas ayuda?</b>
+          <p class="fila"><i data-ic="phone"></i>(312) 316 11 18</p>
+          <button class="fila" data-toast="correo"><i data-ic="mail"></i>proveedores@ucol.mx</button>
+          <p class="fila"><i data-ic="clock"></i>Lun a vie · 8:30 a 14:30 h</p>
+        </div>
+      </aside>
+      </div>
+    </div>
+  </main>
+
+  <div data-footer></div>
+</body>
+</html>

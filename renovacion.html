@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Renovación de registro · Dirección de Proveeduría y Servicios — UdeC</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/paginas.css">
+  <script src="js/app.js" defer></script>
+</head>
+<body data-nav="proveedores">
+  <div data-header></div>
+
+  <main>
+    <section data-hero data-crumbs="Proveedores::requisitos.html|Renovación" data-title="Renovación de registro" data-desc="Actualiza tu expediente para mantener tu registro activo. La validación del padrón tiene vigencia de un año."></section>
+
+    <div class="wrap content reg">
+      <div class="reg__main">
+        <section class="form-sec">
+          <b class="h4">1. Localiza tu registro</b>
+          <form class="row gap-16 ai-s" onsubmit="return false" style="align-items:flex-end">
+            <div class="campo" style="flex:1"><label>RFC *</label><input class="input" type="text" placeholder="AAA000000AAA"></div><div class="campo" style="flex:1"><label>Correo registrado *</label><input class="input" type="email" placeholder="nombre@empresa.com"></div>
+            <button class="btn" data-toast="encontrado">Buscar</button>
+          </form>
+          <div class="ren-reg">
+            <div class="row jc-sb ai-s"><div><b class="h4">Soluciones Informáticas del Pacífico, S.A. de C.V.</b><p class="caption muted">Clave PRV-0412 · RFC SIP******AB1</p></div><span class="tag tag--vigente">Vigente</span></div>
+            <div class="meta">
+              <div><span class="caption muted">Fecha de activación</span><b>15/10/2025</b></div>
+              <div><span class="caption muted">Vigente hasta</span><b>15/10/2026</b></div>
+              <div><span class="caption muted">Días restantes</span><b style="color:var(--rojo)">8 días</b></div>
+            </div>
+            <div class="aviso aviso--sm aviso--alerta"><i data-ic="warning"></i><p>Tu registro vence pronto. Renuévalo para seguir recibiendo invitaciones y poder celebrar contratos.</p></div>
+          </div>
+        </section>
+        <section class="form-sec">
+          <b class="h4">2. Revisa y actualiza tus datos</b>
+          <div class="bloque"><i data-ic="check"></i><div class="f1"><b>Datos generales</b><p class="caption muted">Sin cambios</p></div><a class="lnk" href="registro-paso2.html"><i data-ic="edit" class="ic-16"></i>Editar</a></div>
+          <div class="bloque"><i data-ic="check"></i><div class="f1"><b>Domicilio y contacto</b><p class="caption muted">Actualizado: número de móvil</p></div><a class="lnk" href="registro-paso3.html"><i data-ic="edit" class="ic-16"></i>Editar</a></div>
+          <div class="bloque"><i data-ic="check"></i><div class="f1"><b>Representación</b><p class="caption muted">Sin cambios</p></div><a class="lnk" href="registro-paso4.html"><i data-ic="edit" class="ic-16"></i>Editar</a></div>
+          <div class="bloque"><i data-ic="check"></i><div class="f1"><b>Rubros</b><p class="caption muted">3 rubros</p></div><a class="lnk" href="registro-paso5.html"><i data-ic="edit" class="ic-16"></i>Editar</a></div>
+        </section>
+        <section class="form-sec">
+          <b class="h4">3. Adjunta tu documentación actualizada</b>
+          <div class="dropzone" role="button" tabindex="0" data-target="#archivo-ren"><i data-ic="cloud"></i><b>Arrastra tu archivo .ZIP o .RAR o haz clic para seleccionarlo</b><span class="caption muted">Incluye constancia de situación fiscal y opinión de cumplimiento (32-D) recientes</span></div>
+          <div class="archivo" id="archivo-ren" hidden>
+            <i data-ic="folder"></i>
+            <div class="f1"><b class="small" style="font-weight:700">documentos_empresa.zip</b><p class="caption" style="color:var(--verde)">8.4 MB · cargado correctamente</p></div>
+            <i data-ic="check" class="ic-20" style="color:var(--verde-claro)"></i>
+          </div>
+          <label class="check"><input type="checkbox">Manifiesto bajo protesta de decir verdad que los datos aquí asentados son ciertos y vigentes.</label>
+          <div class="row jc-e"><button class="btn" data-toast="renovacion">Enviar renovación <i data-ic="chevR"></i></button></div>
+        </section>
+      </div>
+      <aside class="reg__lado">
+        <div class="avisos-ven">
+          <i data-ic="mail"></i>
+          <b class="h4">Te avisamos antes de que venza</b>
+          <p class="small">Recibirás correos automáticos cuando falten 30 y 15 días para el vencimiento de tu registro.</p>
+          <div class="cuenta"><span><b>30</b>días</span><span><b>15</b>días</span><span><b>0</b>Vence</span></div>
+        </div>
+        <div class="card lado-card">
+          <span class="insignia"><i data-ic="payment"></i></span>
+          <b class="h4">Pago de la anualidad</b>
+          <p class="small body-700">Después de enviar tu renovación, solicita tu ficha de pago a proveedores@ucol.mx.</p>
+        </div>
+        <div class="card lado-card">
+          <b class="h4">Estatus del padrón</b>
+          <span class="tag tag--activo">Activo</span>
+          <span class="tag tag--vencido">Vencido</span>
+          <span class="tag tag--bloqueado">Bloqueado</span>
+        </div>
+      </aside>
+    </div>
+  </main>
+
+  <div data-footer></div>
+</body>
+</html>

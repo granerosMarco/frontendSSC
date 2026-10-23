@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Requisitos · Dirección de Proveeduría y Servicios — UdeC</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/paginas.css">
+  <script src="js/app.js" defer></script>
+</head>
+<body data-nav="proveedores">
+  <div data-header></div>
+
+  <main>
+    <section data-hero data-crumbs="Proveedores::requisitos.html|Requisitos" data-title="Proveedores" data-desc="Requisitos, registro y renovación para formar parte del padrón de proveedores de la Universidad de Colima."></section>
+
+    <div class="wrap content stack gap-56">
+      <p class="body-700">Dando cumplimiento a la Ley de Transparencia y al Reglamento de Adquisición de Bienes, Contratación de Servicios y Arrendamientos de la Universidad de Colima, ponemos a disposición de los interesados el padrón de proveedores, así como los requisitos y pasos para formar parte de él.</p>
+      <div class="opciones-prov">
+        <article class="card card--sombra opcion-prov">
+          <span class="insignia insignia--64"><i data-ic="store"></i></span>
+          <h2 class="h3">Catálogo de proveedores vigentes</h2>
+          <p class="body-700">Consulta los proveedores activos y validados por la Dirección de Proveeduría y Servicios.</p>
+          <a class="btn btn--contorno" href="catalogo.html">Consultar catálogo <i data-ic="chevR"></i></a>
+        </article>
+        <article class="card card--sombra opcion-prov">
+          <span class="insignia insignia--64"><i data-ic="personAdd"></i></span>
+          <h2 class="h3">Registrarse como proveedor</h2>
+          <p class="body-700">Realiza tu pre-registro en línea y adjunta tu documentación en un solo archivo.</p>
+          <a class="btn" href="registro-paso1.html">Iniciar registro <i data-ic="chevR"></i></a>
+        </article>
+        <article class="card card--sombra opcion-prov">
+          <span class="insignia insignia--64"><i data-ic="renew"></i></span>
+          <h2 class="h3">Renovación de proveedores</h2>
+          <p class="body-700">Actualiza tu expediente para mantener tu registro activo un año más.</p>
+          <a class="btn btn--contorno" href="renovacion.html">Renovar registro <i data-ic="chevR"></i></a>
+        </article>
+      </div>
+
+      <div class="stack gap-24">
+        <div class="sec-title"><p class="overline">Proceso</p><h2>¿Cómo ser proveedor?</h2></div>
+        <div class="pasos">
+          <div class="paso"><span class="paso__n">1</span><b class="h4">Cumple con los requisitos</b><p class="small body-700">Reúne la documentación que se solicita según tu tipo de persona (física o moral).</p><button class="lnk" data-modal="documentos">Ver requisitos <i data-ic="chevR"></i></button></div>
+          <div class="paso"><span class="paso__n">2</span><b class="h4">Realiza tu pre-registro en línea</b><p class="small body-700">Llena el formulario, elige tus rubros y adjunta tus documentos en un archivo .ZIP o .RAR.</p><a class="lnk" href="registro-paso1.html">Registrarme <i data-ic="chevR"></i></a></div>
+          <div class="paso"><span class="paso__n">3</span><b class="h4">Realiza el pago de la anualidad</b><p class="small body-700">Una vez hecho el pre-registro, solicita tu ficha de pago a proveedores@ucol.mx. Al validarse, tu registro queda activo por un año.</p><button class="lnk" data-toast="correo">Solicitar ficha <i data-ic="chevR"></i></button></div>
+        </div>
+      </div>
+
+      <div class="row gap-24 ai-s">
+        <div class="f1 stack gap-16">
+          <div class="sec-title"><p class="overline">Documentación</p><h2>Requisitos por tipo de persona</h2></div>
+          <div class="acordeon is-open"><button class="acordeon__hd" aria-expanded="true">Persona física<i data-ic="expand"></i></button>
+            <div class="acordeon__bd"><ul class="lista-check"><li><i data-ic="check"></i>Identificación oficial vigente (INE o pasaporte)</li><li><i data-ic="check"></i>CURP</li><li><i data-ic="check"></i>Constancia de situación fiscal</li><li><i data-ic="check"></i>Comprobante de domicilio fiscal</li><li><i data-ic="check"></i>Opinión de cumplimiento SAT (32-D)</li><li><i data-ic="check"></i>Carátula de estado de cuenta</li></ul></div></div>
+          <div class="acordeon"><button class="acordeon__hd" aria-expanded="false">Persona moral<i data-ic="expand"></i></button>
+            <div class="acordeon__bd"><ul class="lista-check"><li><i data-ic="check"></i>Acta constitutiva o póliza y modificaciones</li><li><i data-ic="check"></i>Poder notarial del representante</li><li><i data-ic="check"></i>INE del representante</li><li><i data-ic="check"></i>Constancia de situación fiscal</li><li><i data-ic="check"></i>Comprobante de domicilio fiscal</li><li><i data-ic="check"></i>Opinión de cumplimiento SAT (32-D)</li></ul></div></div>
+          <div class="acordeon"><button class="acordeon__hd" aria-expanded="false">Personas autorizadas ante la UdeC<i data-ic="expand"></i></button>
+            <div class="acordeon__bd"><ul class="lista-check"><li><i data-ic="check"></i>Identificación oficial de cada persona autorizada</li><li><i data-ic="check"></i>Carta poder simple firmada por el representante legal</li></ul></div></div>
+        </div>
+        <aside class="card estatus-card">
+          <b class="h4">Estatus de tu registro</b>
+          <p class="small body-700">Después de enviar tu solicitud, tu registro pasa por los siguientes estatus:</p>
+          <div class="estatus-fila"><span class="tag tag--sinvalidar">Registrado</span><div><b>Registrado · sin validar</b><p class="caption muted">Solicitud recibida, en revisión de documentos.</p></div></div>
+          <div class="estatus-fila"><span class="tag tag--activo">Activo</span><div><b>Activo</b><p class="caption muted">Validado. Vigencia de un año; recibes invitaciones de tus rubros.</p></div></div>
+          <div class="estatus-fila"><span class="tag tag--vencido">Vencido</span><div><b>Vencido</b><p class="caption muted">Pasó el año sin actualizar documentos; debes renovar tu registro.</p></div></div>
+          <div class="estatus-fila"><span class="tag tag--bloqueado">Bloqueado</span><div><b>Bloqueado</b><p class="caption muted">Por incumplimiento de contrato o de la normativa aplicable.</p></div></div>
+        </aside>
+      </div>
+
+      <div class="contacto-banda">
+        <div class="row gap-20 ai-c">
+          <span class="insignia insignia--blanca" style="color:var(--morado)"><i data-ic="phone"></i></span>
+          <div><b class="h4">Para citas, aclaraciones e informes comunícate con nosotros</b><p class="small body-700">Teléfono (312) 316 11 18 · Correo proveedores@ucol.mx</p></div>
+        </div>
+        <button class="btn" data-toast="correo">Enviar correo <i data-ic="chevR"></i></button>
+      </div>
+    </div>
+  </main>
+
+  <div data-footer></div>
+</body>
+</html>

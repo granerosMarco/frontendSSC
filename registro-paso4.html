@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Registro · Paso 4 · Dirección de Proveeduría y Servicios — UdeC</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/paginas.css">
+  <script src="js/app.js" defer></script>
+</head>
+<body data-nav="proveedores">
+  <div data-header></div>
+
+  <main>
+    <section data-hero data-crumbs="Proveedores::requisitos.html|Registro" data-title="Solicitud de ingreso al padrón de proveedores" data-desc="Completa los 5 pasos. Los campos marcados con * son obligatorios."></section>
+
+    <div class="wrap content stack gap-32">
+      <div class="stepper"><div class="step is-done"><span class="step__n"><i data-ic="tick" class="ic-20"></i></span><span class="step__t"><small>Paso 1</small><b>Declaración</b></span></div><span class="step__line is-done"></span><div class="step is-done"><span class="step__n"><i data-ic="tick" class="ic-20"></i></span><span class="step__t"><small>Paso 2</small><b>Datos generales</b></span></div><span class="step__line is-done"></span><div class="step is-done"><span class="step__n"><i data-ic="tick" class="ic-20"></i></span><span class="step__t"><small>Paso 3</small><b>Domicilio y contacto</b></span></div><span class="step__line is-done"></span><div class="step is-current"><span class="step__n">4</span><span class="step__t"><small>Paso 4</small><b>Representación</b></span></div><span class="step__line"></span><div class="step "><span class="step__n">5</span><span class="step__t"><small>Paso 5</small><b>Rubros y documentos</b></span></div></div>
+      <div class="reg">
+      <div class="reg__main">
+        <section class="form-sec">
+          <div class="form-sec__hd"><b class="h4">Representante de la empresa</b></div>
+          <div class="campo"><label>Nombre completo del representante legal *</label><input class="input" type="text" placeholder="Nombre y apellidos"><span class="ayuda">Tal como aparece en el poder notarial.</span></div>
+          <div class="grid-3"><div class="campo"><label>Cargo *</label><input class="input" type="text" placeholder="Ej. Director general"></div><div class="campo"><label>Teléfono *</label><input class="input" type="tel" placeholder="(312) 000 00 00"></div><div class="campo"><label>Correo *</label><input class="input" type="email" placeholder="nombre@empresa.com"></div></div>
+          <div class="row gap-20 ai-s"><div class="campo"><span class="lbl">Identificación *</span><div class="radios"><label class="radio"><input type="radio" name="idrep" checked>INE</label><label class="radio"><input type="radio" name="idrep">Pasaporte</label></div></div><div class="campo" style="flex:1"><label>Número de identificación *</label><input class="input" type="text" placeholder="Clave de elector o número de pasaporte"></div></div>
+        </section>
+        <section class="form-sec">
+          <div class="form-sec__hd"><b class="h4">Poder notarial</b><p>Datos de la escritura pública que acredita las facultades del representante.</p></div>
+          <div class="campo"><span class="lbl">¿El poder del representante está en el acta constitutiva? *</span><div class="radios"><label class="radio"><input type="radio" name="poder">Sí</label><label class="radio"><input type="radio" name="poder" checked>No</label></div></div>
+          <div class="grid-2"><div class="campo"><label>Número de escritura *</label><input class="input" type="text" placeholder="Ej. 12,345"></div><div class="campo"><label>Fecha *</label><input class="input" type="date" placeholder=""></div></div>
+          <div class="grid-2"><div class="campo"><label>Nombre del notario *</label><input class="input" type="text" placeholder="Nombre completo"></div><div class="campo"><label>Número de notaría *</label><input class="input" type="text" placeholder="Ej. 7"></div></div>
+          <div class="grid-3"><div class="campo"><label>Ciudad *</label><input class="input" type="text" placeholder="Ciudad"></div><div class="campo"><label>Estado *</label><select class="input"><option>Colima</option><option>Jalisco</option><option>Michoacán</option><option>Otro</option></select></div><div class="campo"><label>Folio mercantil</label><input class="input" type="text" placeholder="Folio"></div></div>
+        </section>
+        <section class="form-sec" id="autorizadas">
+          <div class="form-sec__hd"><b class="h4">Personas autorizadas ante la Universidad de Colima</b><p>Representantes de venta que podrán realizar trámites y entregar documentos.</p></div>
+          <div class="autorizada">
+            <div class="row jc-sb ai-c"><b>Representante de venta A</b></div>
+            <div class="campo"><label>Nombre completo *</label><input class="input" type="text" placeholder="Nombre y apellidos"></div>
+            <div class="row gap-20 ai-s"><div class="campo"><span class="lbl">Identificación *</span><div class="radios"><label class="radio"><input type="radio" name="idA" checked>INE</label><label class="radio"><input type="radio" name="idA">Pasaporte</label></div></div><div class="campo" style="flex:1"><label>Número de identificación *</label><input class="input" type="text" placeholder="Clave de elector o número de pasaporte"></div></div>
+          </div>
+          <div class="autorizada">
+            <div class="row jc-sb ai-c"><b>Representante de venta B</b><button class="lnk" data-remove=".autorizada"><i data-ic="close" class="ic-16"></i>Quitar</button></div>
+            <div class="campo"><label>Nombre completo *</label><input class="input" type="text" placeholder="Nombre y apellidos"></div>
+            <div class="row gap-20 ai-s"><div class="campo"><span class="lbl">Identificación *</span><div class="radios"><label class="radio"><input type="radio" name="idB" checked>INE</label><label class="radio"><input type="radio" name="idB">Pasaporte</label></div></div><div class="campo" style="flex:1"><label>Número de identificación *</label><input class="input" type="text" placeholder="Clave de elector o número de pasaporte"></div></div>
+          </div>
+          <button class="btn-add" data-add-autorizada><i data-ic="plus"></i>Agregar persona autorizada</button>
+        </section>
+        <div class="acciones">
+          <a class="btn-ant" href="registro-paso3.html"><i data-ic="back"></i>Anterior</a>
+          <div class="row gap-12"><button class="btn btn--contorno" data-toast="borrador">Guardar borrador</button><a class="btn" href="registro-paso5.html">Siguiente: Rubros y documentos <i data-ic="chevR"></i></a></div>
+        </div>
+      </div>
+      <aside class="reg__lado">
+        <div class="ayuda-card">
+          <b class="h4">¿Necesitas ayuda?</b>
+          <p class="fila"><i data-ic="phone"></i>(312) 316 11 18</p>
+          <button class="fila" data-toast="correo"><i data-ic="mail"></i>proveedores@ucol.mx</button>
+          <p class="fila"><i data-ic="clock"></i>Lun a vie · 8:30 a 14:30 h</p>
+        </div>
+      </aside>
+      </div>
+    </div>
+  </main>
+
+  <div data-footer></div>
+</body>
+</html>

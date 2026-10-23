@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Concursos · Dirección de Proveeduría y Servicios — UdeC</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/paginas.css">
+  <script src="js/app.js" defer></script>
+</head>
+<body data-nav="concursos">
+  <div data-header></div>
+
+  <main>
+    <section data-hero data-crumbs="Concursos" data-title="Concursos por invitación"
+      data-desc="Procedimientos de invitación a cuando menos tres personas y concursos abiertos a proveedores del padrón."></section>
+
+    <div class="wrap content stack gap-28" data-tabs-scope>
+      <div class="row jc-sb ai-c">
+        <div class="tabs" role="tablist">
+          <button class="tab is-active" data-tab="curso" role="tab">En curso</button>
+          <button class="tab" data-tab="proximos" role="tab">Próximos</button>
+          <button class="tab" data-tab="concluidos" role="tab">Concluidos</button>
+        </div>
+        <label class="buscador" style="width:340px"><i data-ic="search"></i><input placeholder="Buscar concurso o rubro…" aria-label="Buscar concurso o rubro"></label>
+      </div>
+
+      <!-- En curso -->
+      <div class="cards-3" data-panel="curso">
+        <article class="cc card card--sombra">
+          <div class="cc__top"><div class="cc__fecha"><span class="cc__dia">20</span><span class="caption muted">Oct</span></div>
+            <div class="stack gap-4"><span class="caption muted">Fecha límite de propuestas</span><span class="tag tag--proceso">En proceso</span></div></div>
+          <div class="cc__bd"><p class="overline">IA-UCOL-031/2026</p><b class="h4">Servicio de limpieza en planteles</b><p class="small muted">Rubro: Limpieza</p>
+            <p class="cc__inv"><i data-ic="groups"></i>5 proveedores invitados</p></div>
+          <div class="cc__ft"><a class="lnk" href="concurso-detalle.html">Ver detalle <i data-ic="chevR" class="ic-16"></i></a><button class="lnk lnk--verde" data-toast="descarga">Bases <i data-ic="download" class="ic-16"></i></button></div>
+        </article>
+        <article class="cc card card--sombra">
+          <div class="cc__top"><div class="cc__fecha"><span class="cc__dia">16</span><span class="caption muted">Oct</span></div>
+            <div class="stack gap-4"><span class="caption muted">Fecha límite de propuestas</span><span class="tag tag--proceso">En proceso</span></div></div>
+          <div class="cc__bd"><p class="overline">IA-UCOL-029/2026</p><b class="h4">Suministro de papelería</b><p class="small muted">Rubro: Papelería y oficina</p>
+            <p class="cc__inv"><i data-ic="groups"></i>6 proveedores invitados</p></div>
+          <div class="cc__ft"><a class="lnk" href="concurso-detalle.html">Ver detalle <i data-ic="chevR" class="ic-16"></i></a><button class="lnk lnk--verde" data-toast="descarga">Bases <i data-ic="download" class="ic-16"></i></button></div>
+        </article>
+        <article class="cc card card--sombra">
+          <div class="cc__top"><div class="cc__fecha"><span class="cc__dia">18</span><span class="caption muted">Oct</span></div>
+            <div class="stack gap-4"><span class="caption muted">Fecha límite de propuestas</span><span class="tag tag--proceso">En proceso</span></div></div>
+          <div class="cc__bd"><p class="overline">IA-UCOL-028/2026</p><b class="h4">Uniformes deportivos</b><p class="small muted">Rubro: Material deportivo</p>
+            <p class="cc__inv"><i data-ic="groups"></i>3 proveedores invitados</p></div>
+          <div class="cc__ft"><a class="lnk" href="concurso-detalle.html">Ver detalle <i data-ic="chevR" class="ic-16"></i></a><button class="lnk lnk--verde" data-toast="descarga">Bases <i data-ic="download" class="ic-16"></i></button></div>
+        </article>
+      </div>
+
+      <!-- Próximos -->
+      <div class="cards-3" data-panel="proximos" hidden>
+        <article class="cc card card--sombra">
+          <div class="cc__top"><div class="cc__fecha"><span class="cc__dia">03</span><span class="caption muted">Nov</span></div>
+            <div class="stack gap-4"><span class="caption muted">Fecha límite de propuestas</span><span class="tag tag--proxima">Próxima</span></div></div>
+          <div class="cc__bd"><p class="overline">IA-UCOL-032/2026</p><b class="h4">Impresión de material de difusión</b><p class="small muted">Rubro: Impresión y publicaciones</p>
+            <p class="cc__inv"><i data-ic="groups"></i>Invitación por enviar</p></div>
+          <div class="cc__ft"><a class="lnk" href="concurso-detalle.html">Ver detalle <i data-ic="chevR" class="ic-16"></i></a><button class="lnk lnk--verde" data-toast="descarga">Bases <i data-ic="download" class="ic-16"></i></button></div>
+        </article>
+      </div>
+
+      <!-- Concluidos -->
+      <div class="cards-3" data-panel="concluidos" hidden>
+        <article class="cc card card--sombra">
+          <div class="cc__top"><div class="cc__fecha"><span class="cc__dia">13</span><span class="caption muted">Oct</span></div>
+            <div class="stack gap-4"><span class="caption muted">Fecha límite de propuestas</span><span class="tag tag--concluida">Concluida</span></div></div>
+          <div class="cc__bd"><p class="overline">IA-UCOL-030/2026</p><b class="h4">Mantenimiento de aires acondicionados</b><p class="small muted">Rubro: Mantenimiento</p>
+            <p class="cc__inv"><i data-ic="groups"></i>4 proveedores invitados</p></div>
+          <div class="cc__ft"><a class="lnk" href="concurso-detalle.html">Ver detalle <i data-ic="chevR" class="ic-16"></i></a><button class="lnk lnk--verde" data-toast="descarga">Bases <i data-ic="download" class="ic-16"></i></button></div>
+        </article>
+        <article class="cc card card--sombra">
+          <div class="cc__top"><div class="cc__fecha"><span class="cc__dia">10</span><span class="caption muted">Oct</span></div>
+            <div class="stack gap-4"><span class="caption muted">Fecha límite de propuestas</span><span class="tag tag--concluida">Concluida</span></div></div>
+          <div class="cc__bd"><p class="overline">IA-UCOL-027/2026</p><b class="h4">Servicio de fumigación</b><p class="small muted">Rubro: Servicios generales</p>
+            <p class="cc__inv"><i data-ic="groups"></i>3 proveedores invitados</p></div>
+          <div class="cc__ft"><a class="lnk" href="concurso-detalle.html">Ver detalle <i data-ic="chevR" class="ic-16"></i></a><button class="lnk lnk--verde" data-toast="descarga">Bases <i data-ic="download" class="ic-16"></i></button></div>
+        </article>
+      </div>
+
+      <div class="aviso">
+        <i data-ic="mail"></i>
+        <p>Las invitaciones se envían por correo a los proveedores activos del rubro correspondiente. Mantén tu registro vigente y tus datos de contacto actualizados.</p>
+        <a class="lnk lnk--verde" href="renovacion.html">Renovar registro <i data-ic="chevR" class="ic-16"></i></a>
+      </div>
+    </div>
+  </main>
+
+  <div data-footer></div>
+</body>
+</html>

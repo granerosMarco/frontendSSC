@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Registro · Paso 5 · Dirección de Proveeduría y Servicios — UdeC</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/paginas.css">
+  <script src="js/app.js" defer></script>
+</head>
+<body data-nav="proveedores">
+  <div data-header></div>
+
+  <main>
+    <section data-hero data-crumbs="Proveedores::requisitos.html|Registro" data-title="Solicitud de ingreso al padrón de proveedores" data-desc="Completa los 5 pasos. Los campos marcados con * son obligatorios."></section>
+
+    <div class="wrap content stack gap-32">
+      <div class="stepper"><div class="step is-done"><span class="step__n"><i data-ic="tick" class="ic-20"></i></span><span class="step__t"><small>Paso 1</small><b>Declaración</b></span></div><span class="step__line is-done"></span><div class="step is-done"><span class="step__n"><i data-ic="tick" class="ic-20"></i></span><span class="step__t"><small>Paso 2</small><b>Datos generales</b></span></div><span class="step__line is-done"></span><div class="step is-done"><span class="step__n"><i data-ic="tick" class="ic-20"></i></span><span class="step__t"><small>Paso 3</small><b>Domicilio y contacto</b></span></div><span class="step__line is-done"></span><div class="step is-done"><span class="step__n"><i data-ic="tick" class="ic-20"></i></span><span class="step__t"><small>Paso 4</small><b>Representación</b></span></div><span class="step__line is-done"></span><div class="step is-current"><span class="step__n">5</span><span class="step__t"><small>Paso 5</small><b>Rubros y documentos</b></span></div></div>
+      <div class="reg">
+      <div class="reg__main">
+        <section class="form-sec">
+          <div class="form-sec__hd"><b class="h4">Rubros</b><p>Selecciona los rubros en los que ofreces bienes o servicios. Recibirás invitaciones de estos rubros.</p></div>
+          <div class="row jc-sb ai-c gap-16">
+            <label class="buscador" style="width:266px"><i data-ic="search"></i><input placeholder="Buscar rubro…" aria-label="Buscar rubro"></label>
+            <span class="tag tag--activo" data-chip-count style="align-self:center">3 rubros seleccionados</span>
+          </div>
+          <div class="chips" data-chips>
+            <button class="chip is-on"><i data-ic="tick"></i>Equipo de cómputo</button>
+            <button class="chip is-on"><i data-ic="tick"></i>Software y licencias</button>
+            <button class="chip is-on"><i data-ic="tick"></i>Mantenimiento de equipo</button>
+            <button class="chip"><i data-ic="tick"></i>Papelería y artículos de oficina</button>
+            <button class="chip"><i data-ic="tick"></i>Mobiliario</button>
+            <button class="chip"><i data-ic="tick"></i>Material de laboratorio</button>
+            <button class="chip"><i data-ic="tick"></i>Limpieza e higiene</button>
+            <button class="chip"><i data-ic="tick"></i>Mantenimiento de inmuebles</button>
+            <button class="chip"><i data-ic="tick"></i>Construcción y obra</button>
+            <button class="chip"><i data-ic="tick"></i>Vehículos y refacciones</button>
+            <button class="chip"><i data-ic="tick"></i>Alimentos y cafetería</button>
+            <button class="chip"><i data-ic="tick"></i>Impresión y publicaciones</button>
+            <button class="chip"><i data-ic="tick"></i>Servicios profesionales</button>
+            <button class="chip"><i data-ic="tick"></i>Seguridad y vigilancia</button>
+            <button class="chip"><i data-ic="tick"></i>Material deportivo</button>
+            <button class="chip"><i data-ic="tick"></i>Médico y farmacéutico</button>
+            <button class="chip"><i data-ic="tick"></i>Material eléctrico</button>
+            <button class="chip"><i data-ic="tick"></i>Telecomunicaciones</button>
+          </div>
+        </section>
+        <section class="form-sec">
+          <div class="form-sec__hd"><b class="h4">Documentación</b><p>Adjunta un archivo .ZIP o .RAR con tus documentos escaneados en formato PDF.</p></div>
+          <div class="dropzone" role="button" tabindex="0"><i data-ic="cloud"></i><b>Arrastra tu archivo aquí o haz clic para seleccionarlo</b><span class="caption muted">.ZIP o .RAR · tamaño máximo 20 MB</span></div>
+          <div class="archivo" id="archivo-cargado">
+            <i data-ic="folder"></i>
+            <div class="f1"><b class="small" style="font-weight:700">documentos_soluciones_pacifico.zip</b><p class="caption" style="color:var(--verde)">8.4 MB · cargado correctamente</p></div>
+            <i data-ic="check" class="ic-20" style="color:var(--verde-claro)"></i>
+            <button data-remove=".archivo" aria-label="Quitar archivo" style="color:var(--g500)"><i data-ic="close" class="ic-20"></i></button>
+          </div>
+          <button class="lnk" data-modal="documentos"><i data-ic="eye" class="ic-16"></i>Ver lista de documentos requeridos</button>
+        </section>
+        <section class="form-sec">
+          <div class="form-sec__hd"><b class="h4">Observaciones</b></div>
+          <div class="campo"><label>Comentarios adicionales</label><textarea class="input" rows="3" placeholder="Escribe aquí cualquier aclaración sobre tu registro"></textarea></div>
+        </section>
+        <section class="form-sec">
+          <div class="form-sec__hd"><b class="h4">Confirmación</b></div>
+          <label class="check"><input type="checkbox" checked>Manifiesto bajo protesta de decir verdad que los datos aquí asentados son ciertos y vigentes.</label>
+          <p class="small muted">Colima, Col., a 07 de octubre de 2026</p>
+        </section>
+        <div class="acciones">
+          <a class="btn-ant" href="registro-paso4.html"><i data-ic="back"></i>Anterior</a>
+          <div class="row gap-12"><button class="btn btn--contorno" data-toast="borrador">Guardar borrador</button><a class="btn" href="registro-enviada.html">Enviar solicitud <i data-ic="chevR"></i></a></div>
+        </div>
+      </div>
+      <aside class="reg__lado">
+        <div class="card resumen-sol">
+          <b class="h4">Resumen de tu solicitud</b>
+          <div class="fila"><i data-ic="check"></i><div><b>Declaración Art. 48</b><span class="caption muted">Aceptada</span></div></div>
+          <div class="fila"><i data-ic="check"></i><div><b>Datos generales</b><span class="caption muted">Persona moral · Local</span></div></div>
+          <div class="fila"><i data-ic="check"></i><div><b>Domicilio y contacto</b><span class="caption muted">Colima, Col.</span></div></div>
+          <div class="fila"><i data-ic="check"></i><div><b>Representación</b><span class="caption muted">Apoderado · 2 autorizados</span></div></div>
+          <div class="fila"><i data-ic="check"></i><div><b>Rubros y documentos</b><span class="caption muted">3 rubros · 1 archivo</span></div></div>
+        </div>
+        <div class="ayuda-card">
+          <b class="h4">¿Necesitas ayuda?</b>
+          <p class="fila"><i data-ic="phone"></i>(312) 316 11 18</p>
+          <button class="fila" data-toast="correo"><i data-ic="mail"></i>proveedores@ucol.mx</button>
+          <p class="fila"><i data-ic="clock"></i>Lun a vie · 8:30 a 14:30 h</p>
+        </div>
+      </aside>
+      </div>
+    </div>
+  </main>
+
+  <div data-footer></div>
+</body>
+</html>

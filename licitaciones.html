@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Licitaciones · Dirección de Proveeduría y Servicios — UdeC</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/paginas.css">
+  <script src="js/app.js" defer></script>
+</head>
+<body data-nav="licitaciones">
+  <div data-header></div>
+
+  <main>
+    <section data-hero data-crumbs="Licitaciones" data-title="Licitaciones públicas" data-desc="Convocatorias de licitación pública nacional e internacional de la Universidad de Colima."></section>
+
+    <div class="wrap content stack gap-28" data-tabs-scope>
+      <form class="filtros" onsubmit="return false">
+        <div class="campo" style="width:336px"><label for="f-bus">Buscar licitación</label><input id="f-bus" class="input" placeholder="Folio o descripción"></div>
+        <div class="campo" style="width:220px"><label for="f-rub">Rubro</label><select id="f-rub" class="input"><option>Todos los rubros</option><option>Equipo de cómputo</option><option>Mobiliario</option><option>Material de laboratorio</option><option>Seguridad y vigilancia</option></select></div>
+        <div class="campo" style="width:220px"><label for="f-car">Carácter</label><select id="f-car" class="input"><option>Todos</option><option>Nacional</option><option>Internacional</option></select></div>
+        <div class="campo" style="width:220px"><label for="f-ano">Año</label><select id="f-ano" class="input"><option>2026</option><option>2025</option><option>2024</option></select></div>
+        <button class="btn" data-toast="filtros">Buscar</button>
+      </form>
+      <div class="tabs" role="tablist">
+        <button class="tab is-active" data-tab="todas" role="tab">Todas (24)</button>
+        <button class="tab" data-tab="vigentes" role="tab">Vigentes (3)</button>
+        <button class="tab" data-tab="proceso" role="tab">En proceso (5)</button>
+        <button class="tab" data-tab="concluidas" role="tab">Concluidas (16)</button>
+      </div>
+      <div class="stack gap-16" data-panel="todas">
+        <article class="lic card card--sombra">
+          <div class="lic__fecha"><b>28</b><span class="caption muted">Oct</span></div>
+          <div class="lic__info"><p class="overline">LP-UCOL-012/2026</p><b class="h4">Adquisición de equipo de cómputo para planteles</b><p class="small muted">Rubro: Equipo de cómputo · Licitación pública nacional</p></div>
+          <span class="tag tag--vigente">Vigente</span>
+          <div class="lic__acc"><button class="lnk lnk--verde" data-toast="descarga">Bases <i data-ic="download" class="ic-16"></i></button><a class="lnk" href="licitacion-detalle.html">Ver detalle <i data-ic="chevR" class="ic-16"></i></a></div>
+        </article>
+        <article class="lic card card--sombra">
+          <div class="lic__fecha"><b>30</b><span class="caption muted">Oct</span></div>
+          <div class="lic__info"><p class="overline">LP-UCOL-013/2026</p><b class="h4">Mobiliario escolar para aulas</b><p class="small muted">Rubro: Mobiliario · Licitación pública nacional</p></div>
+          <span class="tag tag--vigente">Vigente</span>
+          <div class="lic__acc"><button class="lnk lnk--verde" data-toast="descarga">Bases <i data-ic="download" class="ic-16"></i></button><a class="lnk" href="licitacion-detalle.html">Ver detalle <i data-ic="chevR" class="ic-16"></i></a></div>
+        </article>
+        <article class="lic card card--sombra">
+          <div class="lic__fecha"><b>05</b><span class="caption muted">Nov</span></div>
+          <div class="lic__info"><p class="overline">LP-UCOL-014/2026</p><b class="h4">Material de laboratorio para facultades</b><p class="small muted">Rubro: Material de laboratorio · Licitación pública nacional</p></div>
+          <span class="tag tag--vigente">Vigente</span>
+          <div class="lic__acc"><button class="lnk lnk--verde" data-toast="descarga">Bases <i data-ic="download" class="ic-16"></i></button><a class="lnk" href="licitacion-detalle.html">Ver detalle <i data-ic="chevR" class="ic-16"></i></a></div>
+        </article>
+        <article class="lic card card--sombra">
+          <div class="lic__fecha"><b>15</b><span class="caption muted">Oct</span></div>
+          <div class="lic__info"><p class="overline">LP-UCOL-010/2026</p><b class="h4">Servicio de vigilancia en campus</b><p class="small muted">Rubro: Seguridad y vigilancia · Licitación pública nacional</p></div>
+          <span class="tag tag--proceso">En proceso</span>
+          <div class="lic__acc"><button class="lnk lnk--verde" data-toast="descarga">Bases <i data-ic="download" class="ic-16"></i></button><a class="lnk" href="licitacion-detalle.html">Ver detalle <i data-ic="chevR" class="ic-16"></i></a></div>
+        </article>
+        <article class="lic card card--sombra">
+          <div class="lic__fecha"><b>09</b><span class="caption muted">Oct</span></div>
+          <div class="lic__info"><p class="overline">LP-UCOL-009/2026</p><b class="h4">Licencias de software institucional</b><p class="small muted">Rubro: Software y licencias · Licitación pública nacional</p></div>
+          <span class="tag tag--proceso">En proceso</span>
+          <div class="lic__acc"><button class="lnk lnk--verde" data-toast="descarga">Bases <i data-ic="download" class="ic-16"></i></button><a class="lnk" href="licitacion-detalle.html">Ver detalle <i data-ic="chevR" class="ic-16"></i></a></div>
+        </article>
+        <article class="lic card card--sombra">
+          <div class="lic__fecha"><b>22</b><span class="caption muted">Sep</span></div>
+          <div class="lic__info"><p class="overline">LP-UCOL-007/2026</p><b class="h4">Mantenimiento de inmuebles universitarios</b><p class="small muted">Rubro: Mantenimiento de inmuebles · Licitación pública nacional</p></div>
+          <span class="tag tag--concluida">Concluida</span>
+          <div class="lic__acc"><button class="lnk lnk--verde" data-toast="descarga">Bases <i data-ic="download" class="ic-16"></i></button><a class="lnk" href="licitacion-detalle.html">Ver detalle <i data-ic="chevR" class="ic-16"></i></a></div>
+        </article>
+      </div>
+      <div class="stack gap-16" data-panel="vigentes" hidden>
+        <article class="lic card card--sombra">
+          <div class="lic__fecha"><b>28</b><span class="caption muted">Oct</span></div>
+          <div class="lic__info"><p class="overline">LP-UCOL-012/2026</p><b class="h4">Adquisición de equipo de cómputo para planteles</b><p class="small muted">Rubro: Equipo de cómputo · Licitación pública nacional</p></div>
+          <span class="tag tag--vigente">Vigente</span>
+          <div class="lic__acc"><button class="lnk lnk--verde" data-toast="descarga">Bases <i data-ic="download" class="ic-16"></i></button><a class="lnk" href="licitacion-detalle.html">Ver detalle <i data-ic="chevR" class="ic-16"></i></a></div>
+        </article>
+        <article class="lic card card--sombra">
+          <div class="lic__fecha"><b>30</b><span class="caption muted">Oct</span></div>
+          <div class="lic__info"><p class="overline">LP-UCOL-013/2026</p><b class="h4">Mobiliario escolar para aulas</b><p class="small muted">Rubro: Mobiliario · Licitación pública nacional</p></div>
+          <span class="tag tag--vigente">Vigente</span>
+          <div class="lic__acc"><button class="lnk lnk--verde" data-toast="descarga">Bases <i data-ic="download" class="ic-16"></i></button><a class="lnk" href="licitacion-detalle.html">Ver detalle <i data-ic="chevR" class="ic-16"></i></a></div>
+        </article>
+        <article class="lic card card--sombra">
+          <div class="lic__fecha"><b>05</b><span class="caption muted">Nov</span></div>
+          <div class="lic__info"><p class="overline">LP-UCOL-014/2026</p><b class="h4">Material de laboratorio para facultades</b><p class="small muted">Rubro: Material de laboratorio · Licitación pública nacional</p></div>
+          <span class="tag tag--vigente">Vigente</span>
+          <div class="lic__acc"><button class="lnk lnk--verde" data-toast="descarga">Bases <i data-ic="download" class="ic-16"></i></button><a class="lnk" href="licitacion-detalle.html">Ver detalle <i data-ic="chevR" class="ic-16"></i></a></div>
+        </article>
+      </div>
+      <div class="stack gap-16" data-panel="proceso" hidden>
+        <article class="lic card card--sombra">
+          <div class="lic__fecha"><b>15</b><span class="caption muted">Oct</span></div>
+          <div class="lic__info"><p class="overline">LP-UCOL-010/2026</p><b class="h4">Servicio de vigilancia en campus</b><p class="small muted">Rubro: Seguridad y vigilancia · Licitación pública nacional</p></div>
+          <span class="tag tag--proceso">En proceso</span>
+          <div class="lic__acc"><button class="lnk lnk--verde" data-toast="descarga">Bases <i data-ic="download" class="ic-16"></i></button><a class="lnk" href="licitacion-detalle.html">Ver detalle <i data-ic="chevR" class="ic-16"></i></a></div>
+        </article>
+        <article class="lic card card--sombra">
+          <div class="lic__fecha"><b>09</b><span class="caption muted">Oct</span></div>
+          <div class="lic__info"><p class="overline">LP-UCOL-009/2026</p><b class="h4">Licencias de software institucional</b><p class="small muted">Rubro: Software y licencias · Licitación pública nacional</p></div>
+          <span class="tag tag--proceso">En proceso</span>
+          <div class="lic__acc"><button class="lnk lnk--verde" data-toast="descarga">Bases <i data-ic="download" class="ic-16"></i></button><a class="lnk" href="licitacion-detalle.html">Ver detalle <i data-ic="chevR" class="ic-16"></i></a></div>
+        </article>
+      </div>
+      <div class="stack gap-16" data-panel="concluidas" hidden>
+        <article class="lic card card--sombra">
+          <div class="lic__fecha"><b>22</b><span class="caption muted">Sep</span></div>
+          <div class="lic__info"><p class="overline">LP-UCOL-007/2026</p><b class="h4">Mantenimiento de inmuebles universitarios</b><p class="small muted">Rubro: Mantenimiento de inmuebles · Licitación pública nacional</p></div>
+          <span class="tag tag--concluida">Concluida</span>
+          <div class="lic__acc"><button class="lnk lnk--verde" data-toast="descarga">Bases <i data-ic="download" class="ic-16"></i></button><a class="lnk" href="licitacion-detalle.html">Ver detalle <i data-ic="chevR" class="ic-16"></i></a></div>
+        </article>
+        <article class="lic card card--sombra">
+          <div class="lic__fecha"><b>12</b><span class="caption muted">Sep</span></div>
+          <div class="lic__info"><p class="overline">LP-UCOL-005/2026</p><b class="h4">Suministro de material eléctrico</b><p class="small muted">Rubro: Material eléctrico · Licitación pública nacional</p></div>
+          <span class="tag tag--concluida">Concluida</span>
+          <div class="lic__acc"><button class="lnk lnk--verde" data-toast="descarga">Bases <i data-ic="download" class="ic-16"></i></button><a class="lnk" href="licitacion-detalle.html">Ver detalle <i data-ic="chevR" class="ic-16"></i></a></div>
+        </article>
+      </div>
+      <div class="paginacion">
+        <button data-p="prev" aria-label="Anterior"><i data-ic="chevL" class="ic-16"></i></button>
+        <button data-p="1" class="is-active">1</button><button data-p="2">2</button><button data-p="3">3</button><button data-p="4">4</button>
+        <button data-p="next" aria-label="Siguiente"><i data-ic="chevR" class="ic-16"></i></button>
+      </div>
+      <div class="aviso">
+        <i data-ic="info"></i>
+        <p>¿Eres proveedor? Para participar en las licitaciones debes estar registrado y vigente en el padrón de proveedores de la Universidad de Colima.</p>
+        <a class="lnk lnk--verde" href="registro-paso1.html">Registrarme <i data-ic="chevR" class="ic-16"></i></a>
+      </div>
+    </div>
+  </main>
+
+  <div data-footer></div>
+</body>
+</html>

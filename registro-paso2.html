@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Registro · Paso 2 · Dirección de Proveeduría y Servicios — UdeC</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/paginas.css">
+  <script src="js/app.js" defer></script>
+</head>
+<body data-nav="proveedores">
+  <div data-header></div>
+
+  <main>
+    <section data-hero data-crumbs="Proveedores::requisitos.html|Registro" data-title="Solicitud de ingreso al padrón de proveedores" data-desc="Completa los 5 pasos. Los campos marcados con * son obligatorios."></section>
+
+    <div class="wrap content stack gap-32">
+      <div class="stepper"><div class="step is-done"><span class="step__n"><i data-ic="tick" class="ic-20"></i></span><span class="step__t"><small>Paso 1</small><b>Declaración</b></span></div><span class="step__line is-done"></span><div class="step is-current"><span class="step__n">2</span><span class="step__t"><small>Paso 2</small><b>Datos generales</b></span></div><span class="step__line"></span><div class="step "><span class="step__n">3</span><span class="step__t"><small>Paso 3</small><b>Domicilio y contacto</b></span></div><span class="step__line"></span><div class="step "><span class="step__n">4</span><span class="step__t"><small>Paso 4</small><b>Representación</b></span></div><span class="step__line"></span><div class="step "><span class="step__n">5</span><span class="step__t"><small>Paso 5</small><b>Rubros y documentos</b></span></div></div>
+      <div class="reg">
+      <div class="reg__main">
+        <section class="form-sec">
+          <div class="form-sec__hd"><b class="h4">Tipo de persona</b><p>Selecciona cómo estás registrado ante el SAT.</p></div>
+          <div class="persona-tipo" data-persona>
+            <button class="pt is-on" data-tipo="moral"><span class="insignia"><i data-ic="business"></i></span><span><b>Persona moral</b><span class="small muted">Empresa o sociedad</span></span><span class="pt__radio"></span></button>
+            <button class="pt" data-tipo="fisica"><span class="insignia"><i data-ic="person"></i></span><span><b>Persona física</b><span class="small muted">Con actividad empresarial</span></span><span class="pt__radio"></span></button>
+          </div>
+        </section>
+        <section class="form-sec">
+          <div class="form-sec__hd"><b class="h4">Datos de la empresa</b></div>
+          <div class="campo"><label>RFC *</label><input class="input" type="text" placeholder="AAA000000AAA"></div>
+          <div class="campo"><label>Razón social *</label><input class="input" type="text" placeholder="Como aparece en tu constancia de situación fiscal"></div>
+          <div class="grid-2 ai-s"><div class="campo"><label>Nombre comercial *</label><input class="input" type="text" placeholder="Nombre comercial"><span class="ayuda">Así aparecerá en el catálogo público.</span></div><div class="campo"><label>Giro o actividad principal *</label><select class="input"><option>Selecciona una opción</option><option>Comercio</option><option>Servicios</option><option>Manufactura</option><option>Construcción</option></select></div></div>
+          <div class="campo"><span class="lbl">Tipo de proveedor *</span><div class="radios"><label class="radio"><input type="radio" name="tprov" checked>Local</label><label class="radio"><input type="radio" name="tprov">Nacional</label><label class="radio"><input type="radio" name="tprov">Internacional</label></div></div>
+          <div class="campo"><label>Descripción de los bienes o servicios que ofreces *</label><textarea class="input" rows="4" placeholder="Describe brevemente tu giro y los productos o servicios que ofreces"></textarea></div>
+        </section>
+        <section class="form-sec" data-solo-moral>
+          <div class="form-sec__hd"><b class="h4">Constitución de la empresa</b><p>Datos de la escritura pública o póliza constitutiva.</p></div>
+          <div class="campo"><span class="lbl">¿Es Sociedad por Acciones Simplificada (SAS)? *</span><div class="radios"><label class="radio"><input type="radio" name="sas">Sí</label><label class="radio"><input type="radio" name="sas" checked>No</label></div></div>
+          <div class="grid-2 ai-s"><div class="campo"><label>Número de escritura *</label><input class="input" type="text" placeholder="Ej. 12,345"><span class="ayuda">Si es SAS, captura el número de folio del SIGER.</span></div><div class="campo"><label>Fecha de constitución *</label><input class="input" type="date" placeholder=""></div></div>
+          <div class="grid-2"><div class="campo"><label>Nombre del notario *</label><input class="input" type="text" placeholder="Nombre completo"></div><div class="campo"><label>Número de notaría *</label><input class="input" type="text" placeholder="Ej. 7"></div></div>
+          <div class="grid-2"><div class="campo"><label>Ciudad *</label><input class="input" type="text" placeholder="Ciudad"></div><div class="campo"><label>Estado *</label><select class="input"><option>Colima</option><option>Jalisco</option><option>Michoacán</option><option>Ciudad de México</option><option>Otro</option></select></div></div>
+          <div class="grid-2"><div class="campo"><label>Folio mercantil</label><input class="input" type="text" placeholder="Folio del Registro Público"></div><div class="campo"><label>Fecha de inscripción</label><input class="input" type="date" placeholder=""></div></div>
+        </section>
+        <div class="acciones">
+          <a class="btn-ant" href="registro-paso1.html"><i data-ic="back"></i>Anterior</a>
+          <div class="row gap-12"><button class="btn btn--contorno" data-toast="borrador">Guardar borrador</button><a class="btn" href="registro-paso3.html">Siguiente: Domicilio <i data-ic="chevR"></i></a></div>
+        </div>
+      </div>
+      <aside class="reg__lado">
+        <div class="ayuda-card">
+          <b class="h4">¿Necesitas ayuda?</b>
+          <p class="fila"><i data-ic="phone"></i>(312) 316 11 18</p>
+          <button class="fila" data-toast="correo"><i data-ic="mail"></i>proveedores@ucol.mx</button>
+          <p class="fila"><i data-ic="clock"></i>Lun a vie · 8:30 a 14:30 h</p>
+        </div>
+      </aside>
+      </div>
+    </div>
+  </main>
+
+  <div data-footer></div>
+</body>
+</html>
